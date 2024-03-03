@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Richo Novian Saputra"> 
+    <meta name="nim" content="234311024">
+    <title>Halaman Beranda</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: #ccc;
+        padding: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 410px; /* only for demonstration, should be removed */
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+      }
+
+      article img {
+        width: 250px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Mouse Event</h1>
+            <img src="gambar/gambar.jpg" alt="gambar" id="gambar1">
+            <img src="gambar/gambar1.jpg" alt="gambar1" id="gambar2">
+            <img src="gambar/gambar2.jpg" alt="gambar2" id="gambar3"> 
+            <img src="gambar/gambar4.jpg" alt="gambar4" id="gambar4">
+            <img src="gambar/gambar5.jpg" alt="gambar5" id="gambar5">
+            <img src="gambar/gambar6.jpg" alt="gambar6" id="gambar6">
+            <p> </p>
+        </article>
+    </section>
+    
+    <footer>
+      <h2>Footer</h2>
+      <i>copyright@richonovians2024</i>
+    </footer>
+
+    <script>
+      var gambar1 = document.getElementById('gambar1');
+      var gambar2 = document.getElementById('gambar2');
+      var gambar3 = document.getElementById('gambar3');
+      var gambar4 = document.getElementById('gambar4');
+      var gambar5 = document.getElementById('gambar5');
+      var gambar6 = document.getElementById('gambar6');
+
+      // Menambahkan event listener untuk mouseover pada setiap gambar
+      gambar1.addEventListener('mouseover', function() {
+          gambar1.style.transform = 'scale(1.1)';
+      });
+      gambar2.addEventListener('mouseover', function() {
+          gambar2.style.transform = 'scale(1.1)';
+      });
+      gambar3.addEventListener('mouseover', function() {
+          gambar3.style.transform = 'scale(1.1)';
+      });
+      gambar4.addEventListener('mouseover', function() {
+          gambar4.style.transform = 'scale(1.1)';
+      });
+      gambar5.addEventListener('mouseover', function() {
+          gambar5.style.transform = 'scale(1.1)';
+      });
+      gambar6.addEventListener('mouseover', function() {
+          gambar6.style.transform = 'scale(1.1)';
+      });
+
+      // Menambahkan event listener untuk mouseout pada setiap gambar
+      gambar1.addEventListener('mouseout', function() {
+          gambar1.style.transform = 'scale(1)';
+      });
+      gambar2.addEventListener('mouseout', function() {
+          gambar2.style.transform = 'scale(1)';
+      });
+      gambar3.addEventListener('mouseout', function() {
+          gambar3.style.transform = 'scale(1)';
+      });
+      gambar4.addEventListener('mouseout', function() {
+          gambar4.style.transform = 'scale(1)';
+      });
+      gambar5.addEventListener('mouseout', function() {
+          gambar5.style.transform = 'scale(1)';
+      });
+      gambar6.addEventListener('mouseout', function() {
+          gambar6.style.transform = 'scale(1)';
+      });
+  </script>
+
+</body>
+</html>
